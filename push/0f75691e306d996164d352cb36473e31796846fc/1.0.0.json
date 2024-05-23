@@ -1,0 +1,2902 @@
+[
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.BasicHuge.hugeByHand",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 7646.878940339743,
+            "scoreError" : 147.59995410507088,
+            "scoreConfidence" : [
+                7499.278986234673,
+                7794.478894444814
+            ],
+            "scorePercentiles" : {
+                "0.0" : 7484.158249302885,
+                "50.0" : 7649.522756129654,
+                "90.0" : 7786.731165706902,
+                "95.0" : 7792.377495654137,
+                "99.0" : 7792.377495654137,
+                "99.9" : 7792.377495654137,
+                "99.99" : 7792.377495654137,
+                "99.999" : 7792.377495654137,
+                "99.9999" : 7792.377495654137,
+                "100.0" : 7792.377495654137
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    7792.377495654137,
+                    7735.914196181783,
+                    7722.441582520745,
+                    7720.487590004593,
+                    7633.344261644914,
+                    7484.158249302885,
+                    7580.610411647759,
+                    7540.907777349021,
+                    7665.701250614394,
+                    7592.846588477207
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.BasicHuge.hugeChimneyInto",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 6787.869564252678,
+            "scoreError" : 58.48680295428395,
+            "scoreConfidence" : [
+                6729.382761298394,
+                6846.356367206962
+            ],
+            "scorePercentiles" : {
+                "0.0" : 6730.023180700992,
+                "50.0" : 6792.925284171883,
+                "90.0" : 6841.2972323361655,
+                "95.0" : 6842.945334211455,
+                "99.0" : 6842.945334211455,
+                "99.9" : 6842.945334211455,
+                "99.99" : 6842.945334211455,
+                "99.999" : 6842.945334211455,
+                "99.9999" : 6842.945334211455,
+                "100.0" : 6842.945334211455
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    6812.147169679078,
+                    6826.464315458563,
+                    6773.013296736999,
+                    6745.754094878614,
+                    6785.842721226279,
+                    6842.945334211455,
+                    6730.023180700992,
+                    6743.9862332481325,
+                    6800.007847117487,
+                    6818.511449269185
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.BasicLarge.largeByHand",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 42223.90177318683,
+            "scoreError" : 3555.9692124568696,
+            "scoreConfidence" : [
+                38667.93256072996,
+                45779.8709856437
+            ],
+            "scorePercentiles" : {
+                "0.0" : 40945.905840333384,
+                "50.0" : 41427.99619081446,
+                "90.0" : 48113.54458050057,
+                "95.0" : 48649.190702204694,
+                "99.0" : 48649.190702204694,
+                "99.9" : 48649.190702204694,
+                "99.99" : 48649.190702204694,
+                "99.999" : 48649.190702204694,
+                "99.9999" : 48649.190702204694,
+                "100.0" : 48649.190702204694
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    41070.48326916494,
+                    41462.880258916244,
+                    41304.98433906822,
+                    41463.56500901511,
+                    40945.905840333384,
+                    41393.11212271267,
+                    48649.190702204694,
+                    43292.7294851635,
+                    41554.084832920285,
+                    41102.0818723692
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.BasicLarge.largeChimneyInto",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 43056.753470499905,
+            "scoreError" : 3135.354169023718,
+            "scoreConfidence" : [
+                39921.39930147619,
+                46192.10763952362
+            ],
+            "scorePercentiles" : {
+                "0.0" : 40421.18446935338,
+                "50.0" : 42617.17318761094,
+                "90.0" : 47740.35403936763,
+                "95.0" : 48160.84989891419,
+                "99.0" : 48160.84989891419,
+                "99.9" : 48160.84989891419,
+                "99.99" : 48160.84989891419,
+                "99.999" : 48160.84989891419,
+                "99.9999" : 48160.84989891419,
+                "100.0" : 48160.84989891419
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    43955.89130344862,
+                    48160.84989891419,
+                    42310.13454090248,
+                    40421.18446935338,
+                    42575.52350592012,
+                    43738.23503501073,
+                    41592.82107640688,
+                    41911.53120070082,
+                    43242.540805040015,
+                    42658.82286930175
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.BasicSimple.simpleByHand",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 170888.55708179757,
+            "scoreError" : 18096.486000693163,
+            "scoreConfidence" : [
+                152792.0710811044,
+                188985.04308249074
+            ],
+            "scorePercentiles" : {
+                "0.0" : 148305.0297590902,
+                "50.0" : 175043.90562041456,
+                "90.0" : 183023.89507521276,
+                "95.0" : 183172.1352160882,
+                "99.0" : 183172.1352160882,
+                "99.9" : 183172.1352160882,
+                "99.99" : 183172.1352160882,
+                "99.999" : 183172.1352160882,
+                "99.9999" : 183172.1352160882,
+                "100.0" : 183172.1352160882
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    177483.75756419555,
+                    159503.9571008582,
+                    169500.92980975934,
+                    178669.6732826542,
+                    180512.39989154178,
+                    157443.90070982082,
+                    183172.1352160882,
+                    181689.7338073338,
+                    148305.0297590902,
+                    172604.05367663357
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.BasicSimple.simpleChimneyInto",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 173644.98982563696,
+            "scoreError" : 17215.88305868444,
+            "scoreConfidence" : [
+                156429.10676695252,
+                190860.8728843214
+            ],
+            "scorePercentiles" : {
+                "0.0" : 157268.9075185223,
+                "50.0" : 178112.63100702636,
+                "90.0" : 184321.6679620065,
+                "95.0" : 184377.81299824928,
+                "99.0" : 184377.81299824928,
+                "99.9" : 184377.81299824928,
+                "99.99" : 184377.81299824928,
+                "99.999" : 184377.81299824928,
+                "99.9999" : 184377.81299824928,
+                "100.0" : 184377.81299824928
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    179638.88132978394,
+                    176586.38068426875,
+                    173218.32515107526,
+                    182977.1405547472,
+                    184377.81299824928,
+                    157962.86096917998,
+                    158468.14853651196,
+                    183816.36263582142,
+                    182135.07787820956,
+                    157268.9075185223
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.Containers.arrayTransformByHand",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1310.7295993584698,
+            "scoreError" : 128.92858820054695,
+            "scoreConfidence" : [
+                1181.8010111579229,
+                1439.6581875590168
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1195.3881747225157,
+                "50.0" : 1321.4861334464174,
+                "90.0" : 1428.6905764839034,
+                "95.0" : 1433.5868791343726,
+                "99.0" : 1433.5868791343726,
+                "99.9" : 1433.5868791343726,
+                "99.99" : 1433.5868791343726,
+                "99.999" : 1433.5868791343726,
+                "99.9999" : 1433.5868791343726,
+                "100.0" : 1433.5868791343726
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    1370.1595967208377,
+                    1195.3881747225157,
+                    1264.9846731673608,
+                    1433.5868791343726,
+                    1236.2253587461798,
+                    1365.7784626228686,
+                    1377.3609504684532,
+                    1384.6238526296822,
+                    1201.9942411024613,
+                    1277.1938042699662
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.Containers.arrayTransformChimneyInto",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1318.0850577536792,
+            "scoreError" : 127.01317461807281,
+            "scoreConfidence" : [
+                1191.0718831356064,
+                1445.098232371752
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1116.64478282802,
+                "50.0" : 1337.4169585048294,
+                "90.0" : 1424.2423075215304,
+                "95.0" : 1430.241490285336,
+                "99.0" : 1430.241490285336,
+                "99.9" : 1430.241490285336,
+                "99.99" : 1430.241490285336,
+                "99.999" : 1430.241490285336,
+                "99.9999" : 1430.241490285336,
+                "100.0" : 1430.241490285336
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    1349.8156946511053,
+                    1430.241490285336,
+                    1287.4956831717473,
+                    1370.2496626472787,
+                    1269.8976252654454,
+                    1330.414518318776,
+                    1368.199019682787,
+                    1116.64478282802,
+                    1344.419398690883,
+                    1313.4727019954141
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.Containers.mapTransformByHand",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 96.94292809420148,
+            "scoreError" : 13.978211162804833,
+            "scoreConfidence" : [
+                82.96471693139665,
+                110.9211392570063
+            ],
+            "scorePercentiles" : {
+                "0.0" : 85.49627886862946,
+                "50.0" : 95.35839232710126,
+                "90.0" : 111.92585102765467,
+                "95.0" : 112.08352552279231,
+                "99.0" : 112.08352552279231,
+                "99.9" : 112.08352552279231,
+                "99.99" : 112.08352552279231,
+                "99.999" : 112.08352552279231,
+                "99.9999" : 112.08352552279231,
+                "100.0" : 112.08352552279231
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    96.2009077423233,
+                    91.15326083602694,
+                    112.08352552279231,
+                    96.35645362362811,
+                    94.5158769118792,
+                    110.50678057141594,
+                    90.8098692019373,
+                    87.61087358187652,
+                    104.6954540815056,
+                    85.49627886862946
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.Containers.mapTransformChimneyInto",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 88.88031490224867,
+            "scoreError" : 20.056772133232908,
+            "scoreConfidence" : [
+                68.82354276901576,
+                108.93708703548158
+            ],
+            "scorePercentiles" : {
+                "0.0" : 73.11973826009175,
+                "50.0" : 87.32776330854924,
+                "90.0" : 108.92880697634573,
+                "95.0" : 109.58580869181274,
+                "99.0" : 109.58580869181274,
+                "99.9" : 109.58580869181274,
+                "99.99" : 109.58580869181274,
+                "99.999" : 109.58580869181274,
+                "99.9999" : 109.58580869181274,
+                "100.0" : 109.58580869181274
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    109.58580869181274,
+                    73.71225102831811,
+                    81.06601097690852,
+                    99.18473815045638,
+                    99.44143547560776,
+                    75.02184828505067,
+                    88.13421730868812,
+                    86.52130930841034,
+                    103.01579153714249,
+                    73.11973826009175
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.Containers.vectorTransformByHand",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1086.1809361280891,
+            "scoreError" : 116.79260627979488,
+            "scoreConfidence" : [
+                969.3883298482942,
+                1202.973542407884
+            ],
+            "scorePercentiles" : {
+                "0.0" : 937.8147276969552,
+                "50.0" : 1079.9998847813442,
+                "90.0" : 1220.9264571482845,
+                "95.0" : 1228.494690935373,
+                "99.0" : 1228.494690935373,
+                "99.9" : 1228.494690935373,
+                "99.99" : 1228.494690935373,
+                "99.999" : 1228.494690935373,
+                "99.9999" : 1228.494690935373,
+                "100.0" : 1228.494690935373
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    1228.494690935373,
+                    1099.9213959590652,
+                    1083.4893610149127,
+                    1069.7787672928434,
+                    1152.8123530644866,
+                    1076.5104085477758,
+                    1018.4959054811994,
+                    1068.791047151723,
+                    1125.7007041365557,
+                    937.8147276969552
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.Containers.vectorTransformChimneyInto",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 731.3993967493016,
+            "scoreError" : 113.01555551662034,
+            "scoreConfidence" : [
+                618.3838412326812,
+                844.4149522659219
+            ],
+            "scorePercentiles" : {
+                "0.0" : 598.9980526349592,
+                "50.0" : 736.6361730295863,
+                "90.0" : 849.0294067994387,
+                "95.0" : 855.9738733922198,
+                "99.0" : 855.9738733922198,
+                "99.9" : 855.9738733922198,
+                "99.99" : 855.9738733922198,
+                "99.999" : 855.9738733922198,
+                "99.9999" : 855.9738733922198,
+                "100.0" : 855.9738733922198
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    713.1163104528665,
+                    734.1624555622441,
+                    739.1098904969285,
+                    773.8473922651941,
+                    629.8236393234519,
+                    768.5115314227052,
+                    713.9216144780384,
+                    598.9980526349592,
+                    855.9738733922198,
+                    786.5292074644077
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.Coproduct.coproductIsomorphismByHand",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 549926.8615860792,
+            "scoreError" : 220292.21022899626,
+            "scoreConfidence" : [
+                329634.651357083,
+                770219.0718150755
+            ],
+            "scorePercentiles" : {
+                "0.0" : 409475.0991693485,
+                "50.0" : 475705.1239612189,
+                "90.0" : 765059.2377504499,
+                "95.0" : 765154.5119955995,
+                "99.0" : 765154.5119955995,
+                "99.9" : 765154.5119955995,
+                "99.99" : 765154.5119955995,
+                "99.999" : 765154.5119955995,
+                "99.9999" : 765154.5119955995,
+                "100.0" : 765154.5119955995
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    417509.12709301495,
+                    765154.5119955995,
+                    467040.24051800906,
+                    469416.62778071087,
+                    764201.7695441041,
+                    452252.5278220814,
+                    538080.2248506282,
+                    734144.8669455698,
+                    409475.0991693485,
+                    481993.620141727
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.Coproduct.coproductIsomorphismChimneyDefined",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 279935.07516772486,
+            "scoreError" : 71650.54839872697,
+            "scoreConfidence" : [
+                208284.5267689979,
+                351585.62356645183
+            ],
+            "scorePercentiles" : {
+                "0.0" : 217386.05281711338,
+                "50.0" : 283448.2667150445,
+                "90.0" : 334932.5049998461,
+                "95.0" : 335241.637527377,
+                "99.0" : 335241.637527377,
+                "99.9" : 335241.637527377,
+                "99.99" : 335241.637527377,
+                "99.999" : 335241.637527377,
+                "99.9999" : 335241.637527377,
+                "100.0" : 335241.637527377
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    316354.6270084102,
+                    228807.92311155357,
+                    316659.0303882326,
+                    318091.89708336943,
+                    217386.05281711338,
+                    332150.3122520678,
+                    237667.303229142,
+                    246450.06183830407,
+                    335241.637527377,
+                    250541.9064216788
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.Coproduct.coproductIsomorphismChimneyInto",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 467457.36832781846,
+            "scoreError" : 121409.50733772975,
+            "scoreConfidence" : [
+                346047.8609900887,
+                588866.8756655483
+            ],
+            "scorePercentiles" : {
+                "0.0" : 366966.843534744,
+                "50.0" : 475075.8846171693,
+                "90.0" : 587968.5293246044,
+                "95.0" : 592791.498769787,
+                "99.0" : 592791.498769787,
+                "99.9" : 592791.498769787,
+                "99.99" : 592791.498769787,
+                "99.999" : 592791.498769787,
+                "99.9999" : 592791.498769787,
+                "100.0" : 592791.498769787
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    544561.8043179613,
+                    366966.843534744,
+                    544423.827035067,
+                    450130.5220807313,
+                    370124.2307021381,
+                    592791.498769787,
+                    368227.6866748873,
+                    464172.5374982875,
+                    485979.231736051,
+                    487195.50092853
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.DSLOverhead.largeComputeByHand",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 39139.68036275441,
+            "scoreError" : 4971.867612435979,
+            "scoreConfidence" : [
+                34167.81275031843,
+                44111.547975190384
+            ],
+            "scorePercentiles" : {
+                "0.0" : 35998.35205226602,
+                "50.0" : 38101.55419182051,
+                "90.0" : 46940.43862168251,
+                "95.0" : 47585.130997765795,
+                "99.0" : 47585.130997765795,
+                "99.9" : 47585.130997765795,
+                "99.99" : 47585.130997765795,
+                "99.999" : 47585.130997765795,
+                "99.9999" : 47585.130997765795,
+                "100.0" : 47585.130997765795
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    47585.130997765795,
+                    37984.92074312911,
+                    38304.97116074557,
+                    38218.187640511926,
+                    35998.35205226602,
+                    37654.72313125699,
+                    39782.902257209666,
+                    36948.76066648876,
+                    37780.647741237335,
+                    41138.20723693294
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.DSLOverhead.largeComputeChimneyDefined",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 21810.825412609793,
+            "scoreError" : 2903.440773864268,
+            "scoreConfidence" : [
+                18907.384638745523,
+                24714.266186474062
+            ],
+            "scorePercentiles" : {
+                "0.0" : 19032.815326270746,
+                "50.0" : 22176.940236575392,
+                "90.0" : 24340.51152321123,
+                "95.0" : 24345.034370845595,
+                "99.0" : 24345.034370845595,
+                "99.9" : 24345.034370845595,
+                "99.99" : 24345.034370845595,
+                "99.999" : 24345.034370845595,
+                "99.9999" : 24345.034370845595,
+                "100.0" : 24345.034370845595
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    20836.331807163726,
+                    22754.498670996007,
+                    24299.80589450193,
+                    19604.065966649665,
+                    24345.034370845595,
+                    19799.024388502316,
+                    23082.79722801717,
+                    19032.815326270746,
+                    22504.939495244384,
+                    21848.940977906404
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.DSLOverhead.largeComputeChimneyInto",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1229.2057512061992,
+            "scoreError" : 190.7751626837477,
+            "scoreConfidence" : [
+                1038.4305885224514,
+                1419.980913889947
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1023.9068736049487,
+                "50.0" : 1190.2865526568987,
+                "90.0" : 1407.679708989359,
+                "95.0" : 1408.5869480558322,
+                "99.0" : 1408.5869480558322,
+                "99.9" : 1408.5869480558322,
+                "99.99" : 1408.5869480558322,
+                "99.999" : 1408.5869480558322,
+                "99.9999" : 1408.5869480558322,
+                "100.0" : 1408.5869480558322
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    1201.2952900357652,
+                    1323.3302580371499,
+                    1310.4552220445785,
+                    1179.2778152780322,
+                    1171.5766137796315,
+                    1399.5145573911002,
+                    1023.9068736049487,
+                    1115.3875712246615,
+                    1408.5869480558322,
+                    1158.7263626102922
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.DSLOverhead.largeConstByHand",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 67349.67566712823,
+            "scoreError" : 6044.552220319643,
+            "scoreConfidence" : [
+                61305.12344680859,
+                73394.22788744788
+            ],
+            "scorePercentiles" : {
+                "0.0" : 61144.78215671428,
+                "50.0" : 69531.6720902737,
+                "90.0" : 70224.17287149554,
+                "95.0" : 70239.59166292628,
+                "99.0" : 70239.59166292628,
+                "99.9" : 70239.59166292628,
+                "99.99" : 70239.59166292628,
+                "99.999" : 70239.59166292628,
+                "99.9999" : 70239.59166292628,
+                "100.0" : 70239.59166292628
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    70024.08608804896,
+                    70085.4037486188,
+                    70045.77626967107,
+                    70239.59166292628,
+                    69294.81646613301,
+                    69768.52771441439,
+                    69252.78457716314,
+                    62414.2625988283,
+                    61144.78215671428,
+                    61226.725388764215
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.DSLOverhead.largeConstChimneyDefined",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 25506.266188062917,
+            "scoreError" : 1855.0078071963,
+            "scoreConfidence" : [
+                23651.258380866617,
+                27361.273995259216
+            ],
+            "scorePercentiles" : {
+                "0.0" : 24500.453200343927,
+                "50.0" : 24932.85710893793,
+                "90.0" : 28138.378606089616,
+                "95.0" : 28315.461546625043,
+                "99.0" : 28315.461546625043,
+                "99.9" : 28315.461546625043,
+                "99.99" : 28315.461546625043,
+                "99.999" : 28315.461546625043,
+                "99.9999" : 28315.461546625043,
+                "100.0" : 28315.461546625043
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    24578.32794305794,
+                    25963.26963888676,
+                    28315.461546625043,
+                    24979.63814093169,
+                    24708.056224093194,
+                    24886.07607694417,
+                    24549.0489143736,
+                    26037.698054102097,
+                    24500.453200343927,
+                    26544.632141270762
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.DSLOverhead.largeConstChimneyInto",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1380.5633042868349,
+            "scoreError" : 149.5554056473268,
+            "scoreConfidence" : [
+                1231.007898639508,
+                1530.1187099341616
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1211.6555944170525,
+                "50.0" : 1422.3496429145284,
+                "90.0" : 1482.6631071825857,
+                "95.0" : 1483.7495221680247,
+                "99.0" : 1483.7495221680247,
+                "99.9" : 1483.7495221680247,
+                "99.99" : 1483.7495221680247,
+                "99.999" : 1483.7495221680247,
+                "99.9999" : 1483.7495221680247,
+                "100.0" : 1483.7495221680247
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    1472.885372313635,
+                    1457.0496810112631,
+                    1278.5367298480667,
+                    1483.7495221680247,
+                    1456.8374348016841,
+                    1319.5694117215692,
+                    1280.6500107579952,
+                    1445.7632834524702,
+                    1398.9360023765867,
+                    1211.6555944170525
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.DSLOverhead.largeRenameByHand",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 39397.89609115738,
+            "scoreError" : 5060.429949467062,
+            "scoreConfidence" : [
+                34337.46614169032,
+                44458.326040624444
+            ],
+            "scorePercentiles" : {
+                "0.0" : 35257.23961176022,
+                "50.0" : 39167.22607707025,
+                "90.0" : 43666.22179917369,
+                "95.0" : 43720.60381707383,
+                "99.0" : 43720.60381707383,
+                "99.9" : 43720.60381707383,
+                "99.99" : 43720.60381707383,
+                "99.999" : 43720.60381707383,
+                "99.9999" : 43720.60381707383,
+                "100.0" : 43720.60381707383
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    43720.60381707383,
+                    43176.78363807243,
+                    36472.319867896425,
+                    35257.23961176022,
+                    40477.30810062605,
+                    41653.95714969882,
+                    36576.53447318866,
+                    35817.742691520696,
+                    42969.327508222195,
+                    37857.14405351445
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.DSLOverhead.largeRenameChimneyDefined",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 36845.77815182181,
+            "scoreError" : 2802.52720406591,
+            "scoreConfidence" : [
+                34043.2509477559,
+                39648.30535588772
+            ],
+            "scorePercentiles" : {
+                "0.0" : 34905.218160714605,
+                "50.0" : 35886.746014845296,
+                "90.0" : 39935.7881225856,
+                "95.0" : 40034.28728013463,
+                "99.0" : 40034.28728013463,
+                "99.9" : 40034.28728013463,
+                "99.99" : 40034.28728013463,
+                "99.999" : 40034.28728013463,
+                "99.9999" : 40034.28728013463,
+                "100.0" : 40034.28728013463
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    36078.08782800281,
+                    35370.582299471214,
+                    39049.295704644355,
+                    35587.660589255545,
+                    38626.32788079907,
+                    37805.90301505588,
+                    35695.40420168778,
+                    34905.218160714605,
+                    40034.28728013463,
+                    35305.01455845221
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.DSLOverhead.largeRenameChimneyInto",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 44767.502968295375,
+            "scoreError" : 6442.617204030784,
+            "scoreConfidence" : [
+                38324.88576426459,
+                51210.12017232616
+            ],
+            "scorePercentiles" : {
+                "0.0" : 36751.27187917774,
+                "50.0" : 44527.9074657361,
+                "90.0" : 50038.403414961336,
+                "95.0" : 50139.57812041126,
+                "99.0" : 50139.57812041126,
+                "99.9" : 50139.57812041126,
+                "99.99" : 50139.57812041126,
+                "99.999" : 50139.57812041126,
+                "99.9999" : 50139.57812041126,
+                "100.0" : 50139.57812041126
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    41881.59149552087,
+                    48685.02888204601,
+                    43244.02364230803,
+                    49127.831065912025,
+                    42595.56323450691,
+                    41597.11189151753,
+                    47841.23818238919,
+                    50139.57812041126,
+                    45811.79128916417,
+                    36751.27187917774
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.ErrorAccLarge.largeHappyPartialTransformer",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 888.1135956140239,
+            "scoreError" : 90.9740726849559,
+            "scoreConfidence" : [
+                797.139522929068,
+                979.0876682989798
+            ],
+            "scorePercentiles" : {
+                "0.0" : 776.7031849186686,
+                "50.0" : 906.8431215015444,
+                "90.0" : 966.9233194778396,
+                "95.0" : 969.8521265676883,
+                "99.0" : 969.8521265676883,
+                "99.9" : 969.8521265676883,
+                "99.99" : 969.8521265676883,
+                "99.999" : 969.8521265676883,
+                "99.9999" : 969.8521265676883,
+                "100.0" : 969.8521265676883
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    821.629971567041,
+                    920.8055158761505,
+                    940.5640556692013,
+                    832.4332948602696,
+                    922.5481779844874,
+                    776.7031849186686,
+                    969.8521265676883,
+                    882.9133856936429,
+                    917.794483864008,
+                    895.8917591390807
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.ErrorAccLarge.largeUnhappyPartialTransformer",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 623.1669151344206,
+            "scoreError" : 116.40166673389493,
+            "scoreConfidence" : [
+                506.7652484005257,
+                739.5685818683155
+            ],
+            "scorePercentiles" : {
+                "0.0" : 534.7183037396481,
+                "50.0" : 619.0806856923225,
+                "90.0" : 767.5555536145737,
+                "95.0" : 776.192228829629,
+                "99.0" : 776.192228829629,
+                "99.9" : 776.192228829629,
+                "99.99" : 776.192228829629,
+                "99.999" : 776.192228829629,
+                "99.9999" : 776.192228829629,
+                "100.0" : 776.192228829629
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    579.5006001341732,
+                    682.333716625727,
+                    635.1491084088933,
+                    689.8254766790753,
+                    603.0122629757516,
+                    534.7183037396481,
+                    776.192228829629,
+                    540.4371243056154,
+                    635.9145424520328,
+                    554.5857871936596
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.ErrorAccNestedLarge.nestedLargeHappyPartialTransformer",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 3.802379463230463,
+            "scoreError" : 0.44620904452396665,
+            "scoreConfidence" : [
+                3.3561704187064962,
+                4.248588507754429
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3.336016019218562,
+                "50.0" : 3.985324341379471,
+                "90.0" : 4.0937810473526275,
+                "95.0" : 4.10173477608695,
+                "99.0" : 4.10173477608695,
+                "99.9" : 4.10173477608695,
+                "99.99" : 4.10173477608695,
+                "99.999" : 4.10173477608695,
+                "99.9999" : 4.10173477608695,
+                "100.0" : 4.10173477608695
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    3.9967176590750664,
+                    4.10173477608695,
+                    3.9739310236838756,
+                    3.4760150600091384,
+                    4.017754465382009,
+                    4.0193911355551535,
+                    3.4312060140230325,
+                    3.648830990527116,
+                    4.0221974887437275,
+                    3.336016019218562
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.ErrorAccNestedLarge.nestedLargeUnhappyPartialTransformer",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 2.7639095031044647,
+            "scoreError" : 0.5217647987487908,
+            "scoreConfidence" : [
+                2.242144704355674,
+                3.2856743018532555
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2.43292003450876,
+                "50.0" : 2.6735976079433206,
+                "90.0" : 3.4287382306616725,
+                "95.0" : 3.4705304687325027,
+                "99.0" : 3.4705304687325027,
+                "99.9" : 3.4705304687325027,
+                "99.99" : 3.4705304687325027,
+                "99.999" : 3.4705304687325027,
+                "99.9999" : 3.4705304687325027,
+                "100.0" : 3.4705304687325027
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    2.443633482506148,
+                    2.9986448207302563,
+                    2.9154221347602336,
+                    2.5274682056759086,
+                    2.4506725802199987,
+                    3.0526080880242006,
+                    2.553685047910516,
+                    3.4705304687325027,
+                    2.43292003450876,
+                    2.7935101679761245
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.ErrorAccSimple.simpleHappyByHandCrazyNesting",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 49372.14009835265,
+            "scoreError" : 7299.620776122184,
+            "scoreConfidence" : [
+                42072.519322230466,
+                56671.76087447483
+            ],
+            "scorePercentiles" : {
+                "0.0" : 40196.5561600516,
+                "50.0" : 50854.738141683425,
+                "90.0" : 54070.68321710125,
+                "95.0" : 54141.90631781555,
+                "99.0" : 54141.90631781555,
+                "99.9" : 54141.90631781555,
+                "99.99" : 54141.90631781555,
+                "99.999" : 54141.90631781555,
+                "99.9999" : 54141.90631781555,
+                "100.0" : 54141.90631781555
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    48975.255937124275,
+                    47794.11850804811,
+                    54141.90631781555,
+                    40196.5561600516,
+                    53074.57094486854,
+                    52734.220346242575,
+                    53202.31058425321,
+                    43171.00401835178,
+                    53429.67531067254,
+                    47001.782856098245
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.ErrorAccSimple.simpleHappyByHandEitherSwap",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 85639.19067233164,
+            "scoreError" : 15199.845274827705,
+            "scoreConfidence" : [
+                70439.34539750393,
+                100839.03594715934
+            ],
+            "scorePercentiles" : {
+                "0.0" : 66637.99522424294,
+                "50.0" : 87774.85853939014,
+                "90.0" : 98359.9409438445,
+                "95.0" : 98591.81294258621,
+                "99.0" : 98591.81294258621,
+                "99.9" : 98591.81294258621,
+                "99.99" : 98591.81294258621,
+                "99.999" : 98591.81294258621,
+                "99.9999" : 98591.81294258621,
+                "100.0" : 98591.81294258621
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    88809.26478497876,
+                    89436.01791663415,
+                    91945.55551565997,
+                    66637.99522424294,
+                    85010.36612631092,
+                    86740.45229380154,
+                    96273.09295516912,
+                    80593.70955953439,
+                    98591.81294258621,
+                    72353.6394043983
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.ErrorAccSimple.simpleHappyChimneyDefinedPartial",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 8452.659809172395,
+            "scoreError" : 1419.9996447956955,
+            "scoreConfidence" : [
+                7032.6601643767,
+                9872.659453968092
+            ],
+            "scorePercentiles" : {
+                "0.0" : 7121.424374845342,
+                "50.0" : 8655.266814531675,
+                "90.0" : 9802.132744541352,
+                "95.0" : 9811.839446611151,
+                "99.0" : 9811.839446611151,
+                "99.9" : 9811.839446611151,
+                "99.99" : 9811.839446611151,
+                "99.999" : 9811.839446611151,
+                "99.9999" : 9811.839446611151,
+                "100.0" : 9811.839446611151
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    9714.772425913152,
+                    7265.824444537416,
+                    8652.625252375996,
+                    8662.55761454724,
+                    8389.740353128249,
+                    8822.663778043812,
+                    7121.424374845342,
+                    8657.908376687352,
+                    7427.242025034238,
+                    9811.839446611151
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.ErrorAccSimple.simpleHappyChimneyIntoPartial",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 3513.7521324495488,
+            "scoreError" : 715.9980046510182,
+            "scoreConfidence" : [
+                2797.7541277985306,
+                4229.750137100567
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2782.3735238271356,
+                "50.0" : 3468.861821847334,
+                "90.0" : 4345.530817206075,
+                "95.0" : 4385.429395309035,
+                "99.0" : 4385.429395309035,
+                "99.9" : 4385.429395309035,
+                "99.99" : 4385.429395309035,
+                "99.999" : 4385.429395309035,
+                "99.9999" : 4385.429395309035,
+                "100.0" : 4385.429395309035
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    3502.886032906541,
+                    2782.3735238271356,
+                    3986.44361427944,
+                    3126.100018942826,
+                    4385.429395309035,
+                    3358.5303579424753,
+                    3738.0902771783553,
+                    3058.9855784362394,
+                    3763.8449148853106,
+                    3434.837610788127
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.ErrorAccSimple.simpleUnhappyByHandCrazyNesting",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 11836.634017995357,
+            "scoreError" : 1590.6989780152142,
+            "scoreConfidence" : [
+                10245.935039980142,
+                13427.332996010571
+            ],
+            "scorePercentiles" : {
+                "0.0" : 10706.158231303127,
+                "50.0" : 11668.981408064768,
+                "90.0" : 13323.67599552658,
+                "95.0" : 13333.494565177903,
+                "99.0" : 13333.494565177903,
+                "99.9" : 13333.494565177903,
+                "99.99" : 13333.494565177903,
+                "99.999" : 13333.494565177903,
+                "99.9999" : 13333.494565177903,
+                "100.0" : 13333.494565177903
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    11881.062011478532,
+                    13140.29298478516,
+                    11847.919279551445,
+                    11151.304781468021,
+                    10706.158231303127,
+                    13235.308868664666,
+                    10851.878461647659,
+                    11490.043536578092,
+                    13333.494565177903,
+                    10728.877459298967
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.ErrorAccSimple.simpleUnhappyByHandEitherSwap",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 4758.4883160351765,
+            "scoreError" : 695.2350793579794,
+            "scoreConfidence" : [
+                4063.253236677197,
+                5453.723395393155
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4080.2520300615342,
+                "50.0" : 4719.98092126823,
+                "90.0" : 5554.486941347185,
+                "95.0" : 5587.3378841695285,
+                "99.0" : 5587.3378841695285,
+                "99.9" : 5587.3378841695285,
+                "99.99" : 5587.3378841695285,
+                "99.999" : 5587.3378841695285,
+                "99.9999" : 5587.3378841695285,
+                "100.0" : 5587.3378841695285
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    5112.810778964106,
+                    4764.429470100856,
+                    4080.2520300615342,
+                    4499.173568653684,
+                    4583.148013925934,
+                    4234.566448211217,
+                    5258.828455946097,
+                    4788.804137883201,
+                    4675.532372435604,
+                    5587.3378841695285
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.ErrorAccSimple.simpleUnhappyChimneyDefinedPartial",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 11685.892333805456,
+            "scoreError" : 1501.1634661937967,
+            "scoreConfidence" : [
+                10184.728867611659,
+                13187.055799999252
+            ],
+            "scorePercentiles" : {
+                "0.0" : 10099.772273990675,
+                "50.0" : 11891.283770624625,
+                "90.0" : 13107.953257482583,
+                "95.0" : 13169.353251049934,
+                "99.0" : 13169.353251049934,
+                "99.9" : 13169.353251049934,
+                "99.99" : 13169.353251049934,
+                "99.999" : 13169.353251049934,
+                "99.9999" : 13169.353251049934,
+                "100.0" : 13169.353251049934
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    13169.353251049934,
+                    11067.779980766189,
+                    12555.353315376418,
+                    11636.304517281687,
+                    10099.772273990675,
+                    12279.095438437576,
+                    12146.263023967562,
+                    11339.992707802705,
+                    10280.683072094453,
+                    12284.325757287355
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.ErrorAccSimple.simpleUnhappyChimneyIntoPartial",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 2982.705494269505,
+            "scoreError" : 344.1708713062934,
+            "scoreConfidence" : [
+                2638.5346229632114,
+                3326.8763655757984
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2722.493214372589,
+                "50.0" : 2924.372518650869,
+                "90.0" : 3439.5586609679676,
+                "95.0" : 3463.402082934643,
+                "99.0" : 3463.402082934643,
+                "99.9" : 3463.402082934643,
+                "99.99" : 3463.402082934643,
+                "99.999" : 3463.402082934643,
+                "99.9999" : 3463.402082934643,
+                "100.0" : 3463.402082934643
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    2806.5994742187872,
+                    2949.1670855507787,
+                    3021.143540868913,
+                    2870.2489304859396,
+                    2722.493214372589,
+                    3463.402082934643,
+                    3094.6720297162274,
+                    3224.967863267889,
+                    2774.782769528324,
+                    2899.577951750959
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.Stdlib.eitherTransformByHand",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 95899.82142784462,
+            "scoreError" : 12827.45181401544,
+            "scoreConfidence" : [
+                83072.36961382919,
+                108727.27324186006
+            ],
+            "scorePercentiles" : {
+                "0.0" : 77993.38932891403,
+                "50.0" : 96779.47046872016,
+                "90.0" : 106448.99437835549,
+                "95.0" : 106810.3844336443,
+                "99.0" : 106810.3844336443,
+                "99.9" : 106810.3844336443,
+                "99.99" : 106810.3844336443,
+                "99.999" : 106810.3844336443,
+                "99.9999" : 106810.3844336443,
+                "100.0" : 106810.3844336443
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    103196.48388075618,
+                    95298.63979038161,
+                    98260.30114705871,
+                    92212.77834341448,
+                    106810.3844336443,
+                    77993.38932891403,
+                    101120.36769571992,
+                    103000.29429111093,
+                    91095.33024957388,
+                    90010.24511787208
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.Stdlib.eitherTransformChimney",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 100018.87868922827,
+            "scoreError" : 7383.038297002836,
+            "scoreConfidence" : [
+                92635.84039222544,
+                107401.9169862311
+            ],
+            "scorePercentiles" : {
+                "0.0" : 91053.66712746621,
+                "50.0" : 100982.73651105975,
+                "90.0" : 106850.65907583671,
+                "95.0" : 106937.64809807266,
+                "99.0" : 106937.64809807266,
+                "99.9" : 106937.64809807266,
+                "99.99" : 106937.64809807266,
+                "99.999" : 106937.64809807266,
+                "99.9999" : 106937.64809807266,
+                "100.0" : 106937.64809807266
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    101400.97827390829,
+                    101624.6571894041,
+                    106937.64809807266,
+                    91053.66712746621,
+                    106067.75787571319,
+                    96013.30841713076,
+                    95384.45100729687,
+                    100564.49474821122,
+                    98716.37543626942,
+                    102425.44871880987
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.Stdlib.optionTransformByHand",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 110593.26294312626,
+            "scoreError" : 10788.97926361661,
+            "scoreConfidence" : [
+                99804.28367950965,
+                121382.24220674287
+            ],
+            "scorePercentiles" : {
+                "0.0" : 93819.93041373733,
+                "50.0" : 113170.82074293087,
+                "90.0" : 117041.93654544622,
+                "95.0" : 117107.05014500862,
+                "99.0" : 117107.05014500862,
+                "99.9" : 117107.05014500862,
+                "99.99" : 117107.05014500862,
+                "99.999" : 117107.05014500862,
+                "99.9999" : 117107.05014500862,
+                "100.0" : 117107.05014500862
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    117107.05014500862,
+                    115359.3835730039,
+                    93819.93041373733,
+                    112910.21507910186,
+                    107427.38474829592,
+                    116455.9141493847,
+                    113431.42640675989,
+                    104289.05893648585,
+                    110763.4707478182,
+                    114368.79523166649
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.Stdlib.optionTransformChimney",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 108953.56033062135,
+            "scoreError" : 8978.251669524905,
+            "scoreConfidence" : [
+                99975.30866109644,
+                117931.81200014625
+            ],
+            "scorePercentiles" : {
+                "0.0" : 101818.06305204338,
+                "50.0" : 109480.89371203768,
+                "90.0" : 117406.85988095446,
+                "95.0" : 117632.24259153237,
+                "99.0" : 117632.24259153237,
+                "99.9" : 117632.24259153237,
+                "99.99" : 117632.24259153237,
+                "99.999" : 117632.24259153237,
+                "99.9999" : 117632.24259153237,
+                "100.0" : 117632.24259153237
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    115378.41548575327,
+                    111482.95840606722,
+                    103778.48733690656,
+                    108536.63831916716,
+                    110425.1491049082,
+                    103053.818125711,
+                    117632.24259153237,
+                    102412.3329995951,
+                    101818.06305204338,
+                    115017.4978845289
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.Stdlib.valueClassTransformByHand",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 181182.60349381715,
+            "scoreError" : 31326.528844395194,
+            "scoreConfidence" : [
+                149856.07464942196,
+                212509.13233821234
+            ],
+            "scorePercentiles" : {
+                "0.0" : 152464.73879589333,
+                "50.0" : 181041.63970628902,
+                "90.0" : 216643.8180740341,
+                "95.0" : 218494.96022128075,
+                "99.0" : 218494.96022128075,
+                "99.9" : 218494.96022128075,
+                "99.99" : 218494.96022128075,
+                "99.999" : 218494.96022128075,
+                "99.9999" : 218494.96022128075,
+                "100.0" : 218494.96022128075
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    189153.31238262996,
+                    199983.5387488141,
+                    175314.15329346637,
+                    185428.2898145807,
+                    176654.98959799734,
+                    195439.10950554797,
+                    152464.73879589333,
+                    218494.96022128075,
+                    161568.77965183853,
+                    157324.1629261223
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "io.scalaland.chimney.benchmarks.Stdlib.valueClassTransformChimney",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/home/runner/.cache/coursier/arc/https/github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%252B12/OpenJDK21U-jdk_x64_linux_hotspot_21.0.1_12.tar.gz/jdk-21.0.1+12/bin/java",
+        "jvmArgs" : [
+            "-server",
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:NewSize=1g",
+            "-XX:MaxNewSize=1g",
+            "-XX:InitialCodeCacheSize=512m",
+            "-XX:ReservedCodeCacheSize=512m",
+            "-XX:+UseParallelGC",
+            "-XX:-UseAdaptiveSizePolicy",
+            "-XX:MaxInlineLevel=18",
+            "-XX:+AlwaysPreTouch",
+            "-XX:+UseNUMA",
+            "-XX:-UseAdaptiveNUMAChunkSizing"
+        ],
+        "jdkVersion" : "21.0.1",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "21.0.1+12-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "5 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "5 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 186973.20593292982,
+            "scoreError" : 22249.94604422805,
+            "scoreConfidence" : [
+                164723.25988870178,
+                209223.15197715786
+            ],
+            "scorePercentiles" : {
+                "0.0" : 165060.35175880292,
+                "50.0" : 186443.66860465327,
+                "90.0" : 205588.5144492509,
+                "95.0" : 205663.25025449987,
+                "99.0" : 205663.25025449987,
+                "99.9" : 205663.25025449987,
+                "99.99" : 205663.25025449987,
+                "99.999" : 205663.25025449987,
+                "99.9999" : 205663.25025449987,
+                "100.0" : 205663.25025449987
+            },
+            "scoreUnit" : "ops/ms",
+            "rawData" : [
+                [
+                    203528.63397004132,
+                    180661.28639175833,
+                    192966.7365113243,
+                    186375.07285804974,
+                    205663.25025449987,
+                    186512.2643512568,
+                    171517.27668653367,
+                    204915.89220201026,
+                    172531.29434502084,
+                    165060.35175880292
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+
